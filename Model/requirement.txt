@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+openai
+sentence-transformers
+pinecone-client
+nest-asyncio
