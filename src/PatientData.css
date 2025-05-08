@@ -1,0 +1,201 @@
+.patient-data-section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9fc;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    margin-top: 150px;
+  }
+  
+  .patient-data-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+  }
+  
+  .patient-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .patient-form input,
+  .patient-form select,
+  .patient-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+  }
+  
+  .patient-form input:focus,
+  .patient-form select:focus,
+  .patient-form textarea:focus {
+    outline: none;
+    border-color: #00aaff;
+    box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.2);
+  }
+  
+  .patient-form textarea {
+    grid-column: span 2;
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .patient-form button {
+    grid-column: span 2;
+    background-color: #11786e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .patient-form button:hover {
+    background-color: #26A69A;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .patient-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .patient-form textarea,
+    .patient-form button {
+      grid-column: span 1;
+    }
+  }
+  .create-button {
+    background-color: #11786e;
+    color: white;
+    padding: 0.9rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 4rem auto;
+    display: block;
+    transition: background-color 0.3s ease;
+    margin-top: 0%;
+  }
+  
+  .create-button:hover {
+    background-color: #26A69A;
+  }
+  .patient-info-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f0f8ff;
+    border: 1px solid #d6eaff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.1);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .all-patient {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-decoration: underline;
+ }
+  .patient-info h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+  .patient-info-container p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .submitted-data-container:hover {
+    background-color: #f0f8ff;
+    border-color: #11786e;
+    transition: 0.3s;
+  }
+  .all-patient-records {
+    margin-top: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+/* Each patient record */
+
+.submitted-data-container {
+    background-color: #eafbf9;
+    padding: 20px;
+    border: 1px solid #11786e;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    max-width: 320px; /* Set max-width for each item (Adjust as per need) */
+    flex: 1 1 47%; /* Ensures 2 items per row */
+    display: flex;
+    flex-direction: column; /* Aligns the info vertically */
+    justify-content: flex-start;
+    color: #11786e;
+  }
+  
+/* Hover effect */
+.submitted-data-container:hover {
+    transform: scale(1.02);
+  }
+  .patient-info {
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .overlay-patient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(164, 163, 163, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .submitted-data-container:hover .overlay-patient {
+    opacity: 1;
+  }
+  .edit-button {
+    background-color: #26A69A;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+/* Patient Records Grid */
+.patient-records-grid {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap to the next line */
+    gap: 40px;        /* Space between the items */
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  

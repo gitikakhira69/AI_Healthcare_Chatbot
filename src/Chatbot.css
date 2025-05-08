@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: tealGradient 6s ease infinite;
+    
+  }
+  @keyframes tealGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .chatbox {
+    width: 90%;
+    max-width: 600px;
+    height: 70vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-color: black;
+    border-width: 2px;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 70%;
+    background-color: #008080;
+    color: white;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background-color: #008080;
+    color: white;
+  }
+  
+  .bot {
+    align-self: flex-start;
+    background-color: lightgray;
+    color: black;
+  }
+  
+  .input-container {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 10px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    outline: none;
+  }
+  
+  .send-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #006666;
+  }
+  @property --bg-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: "<angle>";
+  }
+  @keyframes spin {
+    to {
+      --bg-angle: 360deg;
+    }
+  }
+  .chatbox {
+    animation: spin 2.5s infinite linear paused;
+    background:
+      linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.95),  /* Dark Blue */
+          rgba(255, 255, 255, 0.95)
+        )
+        padding-box, /* ends at inner border edges */
+      conic-gradient(
+          from var(--bg-angle),
+          rgb(175, 175, 175) 0%,    /* Red */
+          rgb(150, 150, 148) 30%, /* Yellow */
+          rgb(129, 129, 129) 60%,   /* Green */
+          rgb(102, 103, 103) 90%, /* Cyan */
+          rgb(62, 62, 63) 120%,  /* Blue */
+          rgb(0, 0, 0) 150%,/* Magenta */
+          rgb(175, 175, 175) 180%   /* Back to Red */
+        )
+        border-box; /* extends to outer border edges */
+  
+    /* Transparent border to show the conic gradient */
+    border: 6px solid transparent;
+  
+    /* Play animation when hovered */
+    & {
+      animation-play-state: running;
+    }
+  }

@@ -1,0 +1,268 @@
+/* About Us Section - Background and Title */
+.about-us-header {
+    background: url("/public/images/abouttop.jpg");
+      padding-top: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .about-us-header h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin: 0;
+      color: #000;
+    }
+    
+    .visions-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      gap: 30px;
+    }
+    
+    .visions-image {
+      position: relative;
+      width: 350px;
+      height: 200px;
+    }
+    
+    .visions-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 4px solid #d81b60; /* Pink border */
+      border-radius: 0px 80px 0px 80px; /* Curved top-left and bottom-right */
+      padding: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Small circular image overlay */
+    .visions-image .small-img {
+      position: absolute;
+      right: -150px;
+      bottom: -20px;
+      width: 250px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #d81b60;
+      border-radius: 0px 80px 0px 80px; /* Curved top-left and bottom-right */
+      object-fit: cover;
+      background-color: white;
+    }
+    
+    .visions-text {
+      max-width: 50%;
+      padding-left: 200px;
+    }
+    
+    .visions-text h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    
+    .visions-text p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+    
+   /* Professional Team Section */
+  .team-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+    }
+    
+    .team-text {
+      max-width: 40%;
+    }
+    
+    .team-text h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    
+    .team-text p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    /* Pink Button Styling */
+    .team-text .features-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #d81b60; /* Pink color */
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s ease-in-out;
+    }
+    
+    .team-text .features-button:hover {
+      background-color: #b7154a;
+    }
+    
+    /* Team Images Styling */
+    .team-images {
+      display: flex;
+      gap: 30px;
+    }
+    
+    .team-images img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .team-images img:hover {
+      transform: scale(1.1);
+      border: 3px solid #b7154a;
+     
+    }
+  .about-us-header {
+    background: url("/public/images/abouttop.jpg");
+    padding-top: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-us-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.visions-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+    gap: 30px;
+}
+
+.visions-image {
+    position: relative;
+    width: 350px;
+    height: 200px;
+}
+
+.visions-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #d81b60;
+    border-radius: 0px 80px 0px 80px;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.visions-image .small-img {
+    position: absolute;
+    right: -150px;
+    bottom: -20px;
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #d81b60;
+    object-fit: cover;
+    background-color: white;
+}
+
+.visions-text {
+    max-width: 50%;
+    padding-left: 200px;
+}
+
+.visions-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.visions-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.team-text {
+    max-width: 40%;
+}
+
+.team-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.team-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team-text .features-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d81b60;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.team-text .features-button:hover {
+    background-color: #b7154a;
+}
+
+.team-images {
+    display: flex;
+    gap: 30px;
+}
+
+.team-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-images img:hover {
+    transform: scale(1.1);
+    border: 3px solid #b7154a;
+}  

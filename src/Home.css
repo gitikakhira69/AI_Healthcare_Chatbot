@@ -1,0 +1,223 @@
+.hero {
+    /* Occupies full viewport height */
+    
+    min-height: 800px; /* Fallback for smaller screens */
+    
+    /* Hero background image */
+    background: url("../public/images/background.png") no-repeat center center/cover;
+    background-attachment: scroll; /* or 'fixed' for a parallax effect */
+  
+    /* Layout & alignment */
+    display: flex;
+    align-items: center;       /* Vertically center content */
+    justify-content: flex-start; /* Left-align content horizontally */
+    padding-left: 80px;       /* Space from the left edge */
+    color: #000;              /* Text color (black) */
+    
+  }
+  
+  .hero-content {
+    max-width: 600px; /* Constrain text width */
+  }
+  
+  .hero-content h1 {
+    font-size: 80px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .hero-content p {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+  }
+  
+  .about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+  }
+  
+  .about-images img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .about-images .img1 {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text-container {
+    flex: 1;
+    max-width: 450px;
+    padding-left: 80px;
+  }
+  
+  .text-container h3 {
+    font-size: 20px;
+    color: #740c5c; /* or your bottle green if you want it changed */
+    margin-bottom: 10px;
+  }
+  
+  .text-container h1 {
+    font-size: 45px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px; 
+  }
+  
+  .icon1 {
+    font-size: 90px;
+    padding: 15px;
+    border-radius: 10%;
+    color: #000;
+  }
+  .icon1:hover {
+    background-color: teal;
+  }
+  
+  /* Home Container (Endless Possibilities) */
+  .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .text-container1 {
+    flex: 1;
+    max-width: 700px;
+    padding-right: 100px;
+  }
+  
+  .text-container1 h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .text-container1 p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .text-container1 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .text-container1 ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+  }
+  .text-container1 ul li span {
+    color: #c40050;
+  }
+  
+  /* Right Images Section */
+  .image-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image1 {
+    width: 450px;
+    position: absolute;
+    top: -180px;
+    right: 0px;
+    z-index: 0;
+  }
+  
+  .image2 {
+    width: 350px;
+    position: absolute;
+    top: -80px;
+    right: 240px;
+    z-index: 1;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #181818;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .footer-section {
+    width: 30%;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 1rem;
+    color: #cfcfcf;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  
+  .icon {
+    color: #d31d4a;
+    margin-right: 8px;
+  }
+  
